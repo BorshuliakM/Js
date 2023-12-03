@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>functions</title>
+  </head>
+
+  <body>
+    <script>
+      /*function func1() {
+        console.log('hello');
+        console.log(2+2);
+      }
+      func1();*/
+
+      function calculateTax(cost, taxPercent = 0.1) {
+        console.log(cost*taxPercent);
+      }
+
+      calculateTax(2000, 0.2);
+      calculateTax(); // NaN 
+      calculateTax(1000);
+    </script>
+  </body>
+
+</html>
