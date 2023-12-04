@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>8a-8d</title>
+  </head>
+
+  <body>
+    
+    <script>
+      const productBasketball = {
+        price: 2095,
+        ['delivery-time']: '3 days'
+      };
+      console.log(productBasketball.price);
+      productBasketball.price+=500;
+      console.log(productBasketball.price);
+      console.log(productBasketball['delivery-time']);
+
+      const product1 = {
+        name: "iphone",
+        price: 1000
+      }, 
+      product2 = {
+        name: "macbook",
+        price: 2000
+      };
+
+      function comparePrice(product1, product2) {
+        if (product1.price < product2.price) return product1;
+        else return product2;
+      }
+      console.log(comparePrice(product1, product2));
+    </script>
+  </body>
+
+</html>

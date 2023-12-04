@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>8a-8d</title>
+  </head>
+
+  <body>
+    
+    <script>
+      const product1 = {
+        name: "iphone",
+        price: 1000
+      }, 
+      product2 = {
+        name: "macbook",
+        price: 2000
+      };
+
+      const product3 = product1;
+
+      function isSameProduct(product1, product2) {
+        if (product1 === product2) return true;
+        else return false;
+      }
+      console.log(isSameProduct(product1, product2));
+      console.log(isSameProduct(product1, product3));
+
+      const str = 'Good Morning';
+      //str.toLowerCase(); = 
+      console.log(str.toLowerCase());
+      console.log('test'.repeat(2));
+    </script>
+  </body>
+
+</html>
