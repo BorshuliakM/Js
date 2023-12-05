@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9a-9c</title>
+  </head>
+
+  <body>
+    <button>9a</button>
+    <button class="cool-button" onclick="
+      document.querySelector('.cool-button').innerText = '9b done';
+    ">9b</button>
+    <p></p>
+    <button onclick="displayChoice('heads')">heads</button>
+    <button onclick="displayChoice('tails')">tails</button>
+    <p class="js-result"></p>
+
+    <script>
+      function displayChoice(text) {
+        document.querySelector('.js-result').innerText = 'You chose ' + text;
+      }
+
+      console.log(document.querySelector('button'));
+    </script>
+
+  </body>
+
+</html>
