@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>11homework</title>
+</head>
+
+<body>
+
+    <script>
+        /*11o
+        let words = ['hello', 'world', 'search', 'good'];
+        let index = -1;
+        for (let i = 0; i < words.length; i++) {
+            if (words[i] === 'search') {
+                index = i;
+            }
+        }
+        console.log(index);
+        words = ['not', 'found'];
+        index = -1;
+        for (let i = 0; i < words.length; i++) {
+            if (words[i] === 'search') {
+                index = i;
+            }
+        }
+        console.log(index);
+        */
+
+        /*11p
+        let words = ['hello', 'world', 'search', 'good', 'search'];
+        let index = -1;
+        for (let i = 0; i < words.length; i++) {
+            if (words[i] === 'search') {
+                index = i;
+                break;
+            }
+        }
+        console.log(index);
+        */
+       
+        //11q
+        console.log(findIndex(['constsss', 'snake', 'shape', 'hello'], 'hello'));
+        console.log(findIndex(['constsss', 'snake', 'shape'], 'hello'));
+        function findIndex (array, word)
+        {
+            let index = -1;
+            for (let i=0; i<array.length; i++)
+            {
+                if (array[i] === word) 
+                {
+                    index = i;
+                    break;
+                }
+            }
+            return index;
+        }
+    </script>
+</body>
+
+</html>

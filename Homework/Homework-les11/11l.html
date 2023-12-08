@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11l</title>
+  </head>
+
+  <body>
+
+    <script>
+      console.log(minMax([]));
+      console.log(minMax([2,3,4]))
+      function minMax(array) {
+        const result = {
+          min: null,
+          max: null
+        };
+        for (let i = 0; i < array.length; i++) {
+          if(result.min === null || result.min > array[i]) result.min = array[i];
+          if(result.max === null || result.max < array[i]) result.max = array[i];
+        }
+        return result;
+      }
+    </script>
+
+  </body>
+</html>

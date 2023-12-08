@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>11homework</title>
+</head>
+
+<body>
+
+    <script>
+        /*11r
+        console.log(removeEgg(['egg', 'apple', 'egg','egg','ham']));
+       function removeEgg (foods) 
+       {
+            const resultArr = [];
+            for (let i = 0; i < foods.length; i++)
+            {
+                if (foods[i] === 'egg') 
+                {   
+                    continue;
+                }
+                resultArr.push(foods[i]);
+            }
+            return resultArr;
+       }*/
+
+        /*11s
+       console.log(removeEgg(['egg', 'apple', 'egg','egg','ham']));
+       function removeEgg (foods) 
+       {
+            const resultArr = [];
+            let counter = 0;
+            for (let i = 0; i < foods.length; i++)
+            {
+                if (foods[i] === 'egg' && counter < 2) 
+                {   
+                    counter++;
+                    continue;
+                }
+                resultArr.push(foods[i]);
+            }
+            return resultArr;
+       }*/
+
+       /*11t
+       console.log(removeEgg(['egg', 'apple', 'egg','egg','ham']));
+       function removeEgg (foods) 
+       {    
+            const reversedFoods = foods.reverse();
+            const resultArr = [];
+            let counter = 0;
+            for (let i = 0; i < reversedFoods.length; i++)
+            {
+                if (foods[i] === 'egg' && counter < 2) 
+                {   
+                    counter++;
+                    continue;
+                }
+                resultArr.push(foods[i]);
+            }
+            return resultArr.reverse();
+       }*/
+
+       //11u
+       function removeEgg (foods) 
+       {    
+            const reversedFoods = foods.slice().reverse();
+            const resultArr = [];
+            let counter = 0;
+            for (let i = 0; i < reversedFoods.length; i++)
+            {
+                if (foods[i] === 'egg' && counter < 2) 
+                {   
+                    counter++;
+                    continue;
+                }
+                resultArr.push(foods[i]);
+            }
+            return resultArr.reverse();
+       }
+
+       const foods = ['egg', 'apple', 'egg','egg','ham'];
+       console.log(removeEgg(foods));
+       console.log(foods);
+       
+    </script>
+</body>
+
+</html>

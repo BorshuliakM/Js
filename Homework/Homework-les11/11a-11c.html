@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>11a-11h</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  const nums = [10, 20, 30];
+  //nums[2] = 99;
+  console.log(nums);
+
+  getLastValue(nums);
+  getLastValue(['afafa', 'afafaaf', 'a']);
+  arraySwap(nums);
+  addOne(nums);
+  console.log(nums);
+  function getLastValue(array) {
+    const lastIndex = array[array.length - 1];
+    console.log(lastIndex)
+  }
+
+  function arraySwap(array) {
+    const temp = array[array.length-1];
+    array[array.length-1] = array[0];
+    array[0] = temp;
+    console.log(array);
+  }
+
+  function addOne(array) {
+    for (let i=0;i<array.length;i++) {
+      array[i]+=1;
+    }
+  }
+
+  /*for (let i = 0; i <= 10; i+=2) {
+    console.log(i);
+  }
+
+  for (let i = 5; i >= 0; i--)
+  {
+    console.log(i);
+  }
+  
+  let i = 0;
+  while (i <= 10)
+  {
+    console.log(i);
+    i+=2;
+  }
+
+  let i = 5;
+  while (i >= 0)
+  {
+    console.log(i);
+    i--;
+  }
+
+  for (let i = 0; i < nums.length; i++) {
+    nums[i] +=1;
+  }
+
+  console.log(nums);*/
+</script>
+
+</html>

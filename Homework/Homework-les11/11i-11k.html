@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11i-11k</title>
+  </head>
+
+  <body>
+
+    <script>
+      addNum([1,2,3], 2);
+      addNum([1,2,3], 3);
+
+      addArrays([1,2,3],[1,2,3]);
+
+      console.log(countPositive([1,-3, 5]));
+
+      function addNum(array, num) {
+        const result = [];
+        for (let i = 0; i<array.length; i++) {
+          result.push(array[i] + num);
+        }
+        console.log(result);
+      }
+
+      function addArrays(array1, array2) {
+        const result = [];
+        for (let i = 0; i<array1.length; i++) {
+          result.push(array1[i] + array2[i]);
+        }
+        console.log(result);
+      }
+
+      function countPositive(array) {
+        let sum = 0;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] > 0) {
+            sum++;
+          }
+        }
+        return sum;
+      }
+    </script>
+
+  </body>
+</html>
