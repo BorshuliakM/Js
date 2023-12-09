@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>12homework</title>
+</head>
+
+<body>
+    <button onclick="updateBtn();" class="js-btn">Add to cart</button>
+    <p class="js-message"></p>
+    <script>
+
+        let timeoutId;
+
+        function updateBtn() {
+            const messageElement = document.querySelector('.js-message');
+            messageElement.innerHTML = 'Added';
+
+            // First, cancel the previous timeout so that
+            // it doesn't remove the message too quickly.
+            clearTimeout(timeoutId);
+
+            timeoutId = setTimeout(function () {
+                messageElement.innerHTML = '';
+            }, 2000);
+        }
+
+        /*12e
+        function updateBtn() {
+            const message = document.querySelector('.js-message');
+            message.innerHTML = 'Added';
+            setTimeout(function () {
+                message.innerHTML = '';
+            }, 2000);
+        }
+        
+        12d
+        function updateBtn() {
+            const button = document.querySelector('.js-btn');
+            button.innerHTML = 'Loading...';
+            setTimeout(function () {
+                button.innerHTML = 'Finished!';
+            }, 1000);
+        }
+
+        12c
+        function updateBtn() {
+            const button = document.querySelector('.js-btn');
+            setTimeout(function () {
+                button.innerHTML = 'Finished!';
+            }, 1000);
+        }
+
+        12a
+        let add = function () {
+            console.log(2+3);
+        };
+        add();
+        add();
+
+        12b
+        function runTwice (fun) {
+            fun();
+            fun();
+        }
+
+        runTwice(function () {
+            console.log('12b');
+        });
+
+        runTwice(add);
+        */
+    </script>
+</body>
+
+</html>

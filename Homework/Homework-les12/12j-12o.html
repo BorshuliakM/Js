@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework12</title>
+    </head>
+
+    <body>
+        <script>
+            const multiply = (val1, val2) => val1 + val2;
+            console.log(multiply(1,3));
+
+            /*const countPositive = array => {
+                let counter = 0;
+                array.forEach(element => {
+                    if (element > 0) counter++;
+                });
+                return counter;
+            };
+
+            function countPositive (array) {
+                let counter = 0;
+                array.forEach(value => {
+                    if(value > 0) counter++; 
+                });
+                return counter;
+            }
+
+            const arraychik = [-2, -1, 0, 1, 2];
+            console.log(countPositive(arraychik));
+
+            function addNum (array, num) { 
+                
+                return array.map(value => value + num);
+            }
+            console.log(addNum(arraychik, 2));
+            */
+
+            function removeEgg(foods) {
+                return foods.filter(value => {
+                    if (value !== 'egg') return true;
+                });
+            }
+
+            function removeFirstTwoEggs(foods) {
+                let counter = 0; 
+                return foods.filter(value => {
+                    if (value === 'egg' && counter < 2) {
+                        counter++;
+                        return false;
+                    }
+                    else return true;
+                });
+            }
+            console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+            console.log(removeFirstTwoEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
+        </script>
+    </body>
+</html>
